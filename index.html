@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <!-- Header section -->
+    <div class="container-fluid bg-primary Header fixed-top">
+        <div class="row py-2 d-flex">
+            <!-- Logo -->
+            <div class="col logo offset-lg-1">
+    
+                <a href="/index.html">
+                    <p style="color: white;">Mimic Crafts Cape</p>
+                </a>
+            </div>
+    
+            <!-- Search -->
+            <div class="col col-md-4  search d-flex dropdown bg-white">
+                <input class="form-control dropdown-toggle" type="search" placeholder="Search for products, brands and more"
+                    aria-label="Search" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                <i class="fa fa-search mt-2 ml-sm-1 text-primary"></i>
+                <div class="dropdown-menu col-12 search-item" aria-labelledby="navbarDropdown">
+                    <h6 class="ml-4">Discover More</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Data Logging
+                        Solutions</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Software
+                        Solutions</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Audible &
+                        Visual</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Control
+                        Components</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Interface
+                        Solutions</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Brands</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Mimic
+                        Panels</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Power
+                        Logging</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>LED
+                        Indication</a>
+                    <a class="dropdown-item py-2" href=""><i class="fa fa-search text-secondary mr-3"></i>Interface
+                        Products</a>
+                </div>
+            </div>
+    
+            <!-- Login -->
+            <div class="col dropdown login">
+                <button class="btn bg-white text-primary" type="button" id="loginMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+                    Login
+                </button>
+                <div class="dropdown-menu login-list col-12 aria-labelledby=" loginMenuButton">
+                    <div class="d-flex">
+                        <h6 class="ml-md-1">New Customer?</h6>
+                        <a href="#" class="ml-auto mr-2" id="signUp">Sign Up</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa fa-user-circle text-primary mt-2 ml-2" aria-hidden="true"></i>
+                        <a class="dropdown-item" href="">My Profile</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa fa-plus text-primary mt-2 ml-2" aria-hidden="true"></i>
+                        <a class="dropdown-item" href="">My Projects</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa fa-book text-primary mt-2 ml-2" aria-hidden="true"></i>
+                        <a class="dropdown-item" href="">Orders</a>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!-- More -->
+            <div class="col dropdown more">
+                <a class="btn dropdown-toggle text-white ml-lg-2 ml-sm-0" href="#" role="button" id="moreMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </a>
+    
+                <div class="dropdown-menu more-list" aria-labelledby="moreMenuLink">
+                    <div class="d-flex">
+                        <i class="fa fa-bell text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                        <a class="dropdown-item" href="#">Notification Preferences</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa fa-question-circle text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                        <a class="dropdown-item" href="/contact/contact.html">Customer Care</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa fa-download text-primary ml-md-3 mt-2" aria-hidden="true"></i>
+                        <a class="dropdown-item" href="#">Download Catalogue</a>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+    
+            
+           
+    
+            
+    
+        </div>
+    </div>
+    <hr>
+    <hr>
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light border m-0 p-0">
+        <div class="container-fluid  text-dark justify-content-center m-0 p-0">
+            <div class="dropdown"><button id="Electronic" class="btn  dropbtn dropdown-toggle font-weight-bold m-1"
+                    type="button" data-toggle="dropdown" style="font-size : 14px;">LED INDICATION<span
+                        class="caret"></span></button>
+                <div class="dropdown-content">
+                    <a href="LED-Indication/pilot-light.html">Pilot Lights 16mm</a>
+                    <a href="LED-Indication/pilot-light.html">Pilot Lights 22mm</a>
+                    <a href="LED-Indication/semaphores.html"> LED Semaphores</a>
+                    <a href="LED-Indication/segment-displays.html">Chrome Bezel Small LEDs</a>
+                    <a href="LED-Indication/explosion-proof.html">Elecro Mechanical Semaphores</a>
+                </div>
+            </div>
+            <div class="dropdown"><button id="Tv" class="btn dropbtn dropdown-toggle font-weight-bold m-1" type="button"
+                    data-toggle="dropdown" style="font-size : 14px;">Control Components<span class="caret"></span></button>
+                <div class="dropdown-content">
+                    <a href="control-components/specialised-sub-station.html">Toggle Switches</a>
+                    <a href="control-components/specialised-sub-station.html">Push Buttons 10mm</a>
+                    <a href="control-components/specialised-sub-station.html">Push Buttons 16mm</a>
+                    <a href="control-components/specialised-sub-station.html"></a>
+                </div>
+            </div>
+            <div class="dropdown"><button id="Men" class="btn dropbtn dropdown-toggle font-weight-bold m-1" type="button"
+                    data-toggle="dropdown" style="font-size : 14px;">Audible & Visual<span class="caret"></span></button>
+                <div class="dropdown-content">
+                    <a href="audible&visual/aviation-lighting.html">Aviation Lighting(see Sep Catalogue or Download</a>
+                    <a href="audible&visual/wire-marking.html">Wire Marking </a>
+                    <a href="audible&visual/cabling-solutions.html">Cabling Solutions</a>
+                    <a href="audible&visual/enclosures.html">Enclosures</a>
+                    <a href="audible&visual/enclosures.html">Refuge Bay Boxes</a>
+                    <a href="audible&visual/enclosures.html">For More Qlight See Brand Section or Download Catelogue</a>
+    
+                </div>
+            </div>
+            <div class="dropdown"><button id="Women" class="btn dropbtn dropdown-toggle font-weight-bold m-1" type="button"
+                    data-toggle="dropdown" style="font-size : 14px;">Measuring Instruments<span
+                        class="caret"></span></button>
+                <div class="dropdown-content">
+                    <a href="measuring-instruments/controllers.html">Data Acquisition(tx rail</a>
+                    <a href="audible&visual/enclosures.html">Big Digit Displays and Clocks</a>
+    
+                </div>
+            </div>
+            <div class="dropdown"><button id="Baby" class="btn dropbtn dropdown-toggle font-weight-bold m-1" type="button"
+                    data-toggle="dropdown" style="font-size : 14px;">Data Logging<span class="caret"></span></button>
+                <div class="dropdown-content">
+                    <a href="data-acquisitions/">Data Acquisition</a>
+                    <a href="data-acquisitions/recorders.html">Recorders</a>
+                </div>
+            </div>
+            <div class="dropdown"><button id="Home" class="btn dropbtn dropdown-toggle font-weight-bold m-1" type="button"
+                    data-toggle="dropdown" style="font-size : 14px;">Alarm Systems<span class="caret"></span>
+                    <div class="dropdown-content">
+                        <a href="alarm-systems/displays.html">Displays </a>
+                        <a href="alarm-systems/annunciators.html">Annunciators</a>
+                        <a href="alarm-systems/modbus.html">Modbus</a>
+                    </div>
+                </button>
+            </div>
+            <div class="dropdown"><button id="Sports" class="btn dropdown-toggle font-weight-bold m-1" type="button"
+                    data-toggle="dropdown" style="font-size : 14px;">Interface Products<span class="caret"></span></button>
+                <div class="dropdown-content">
+                    <a href="interface-products/PSU.html">Psu</a>
+    
+                </div>
+            </div>
+            <div class="dropdown"><button id="Sports" class="btn dropdown-toggle font-weight-bold m-1" type="button"
+                    data-toggle="dropdown" style="font-size : 14px;">Brands<span class="caret"></span></button>
+                <div class="dropdown-content">
+                    <a href="/brands/Adda-systems.html">ADDA Systems</a>
+                    <a href="/brands/comeletric.html">Comeletric</a>
+                    <a href="/brands/qlight.html">Qlight</a>
+                    <a href="/brands/deca-switchlab.html">DECA Switchlab</a>
+                    <a href="/brands/grafoplast.html">Grafoplast</a>
+            
+                </div>
+            </div>
+
+    
+            <div class="dropdown"><button id="Sports" class="btn dropdown-toggle font-weight-bold m-1" type="button"
+                    data-toggle="dropdown" style="font-size : 14px;">Software Solutions<span class="caret"></span></button>
+                <div class="dropdown-content">
+                    <a href="software/software.html">Software</a>
+    
+    
+                </div>
+    
+    
+            </div>
+    
+    
+        </div>
+    </nav>
+    
+    
+    
+    
+    
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide my-1" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img class="img-fluid w-100" src="images/Banner sample 009.png" alt="Second slide">
+            </div>
+            <!-- Carousel -->
+            <div id="carouselExampleControls" class="carousel slide my-1" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img class="img-fluid w-100"
+                            src="https://www.qlight.com/assets/images/common/pcmv_02.jpg?v=p_20211124-2" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid w-100"
+                            src="https://www.qlight.com/images/index/common/smart-factory.png?v=p_20211124-2"
+                            alt="Third slide">
+                    </div>
+                    <div class="carousel-item active">
+                        <img class="img-fluid w-100"
+                            src="https://www.qlight.com/images/index/common/tower-lamp.png?v=p_20211124-2"
+                            alt="First slide">
+                    </div>
+                </div>
+    
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href=" #carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100" src="images/Banner sample 011.png" alt="Third slide">
+            </div>
+            <div class="carousel-item active">
+                <img class="img-fluid w-100" src="images/banner3.jpeg" alt="First slide">
+            </div>
+        </div>
+    
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href=" #carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+    <style type="text/css">
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+            
+        }
+
+        /* Navigation STyling */
+        .main-nav {
+            width: 250px;
+            background: #007bff;
+            float: right !important;
+            margin: bottom !important;
+            position: fixed right;
+
+        }
+
+        .main-nav a {
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: #FFF;
+            display: block;
+            padding: 5px 0 10px 20px;
+            border-bottom: 1px dotted gray;
+        }
+
+        .cont{
+            color: black;
+        }
+
+
+
+        .main-nav-ul ul {
+            display: none;
+        }
+
+        .main-nav-ul li:hover ul {
+            display: block;
+        }
+
+        .main-nav-ul ul a:before {
+            content: '\203A';
+            margin-right: 20px;
+        }
+
+        .main-nav .sub-arrow:after {
+            content: '\203A';
+            float: right;
+            margin-right: 20px;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+        }
+    </style>
+    </head>
+
+
+    <nav class="main-nav">
+        <ul class="main-nav-ul">
+            <li style="font-size: 30px;"><a href="#">Our Products</a></li>
+
+
+            <li><a href="#">LED Indicators<span class="sub-arrow"></span></a>
+                <ul class="cont">
+                    <li><a href="#">Discrete LED'S</a></li>
+                    <li><a href="#">Discrete & Surface Mount LED</a></li>
+                    <li><a href="#">LED Holders & Accessories</a></li>
+                    <li><a href="#">LED Lamp Replacements</a></li>
+                    <li><a href="#">Pilot Lights(Ø8x10mm)</a></li>
+                    <li><a href="#">Pilot Lights(Ø14x16mm)</a></li>
+                    <li><a href="#">Pilot Lights(Ø22x30mm)</a></li>
+                    <li><a href="#">Other Pilot Lights</a></li>
+                    <li><a href="#">Semaphores</a></li>
+                    
+                </ul>
+            </li>
+
+
+            <li><a href="#">Control Components<span
+                        class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">DECA Push Buttons & Switches</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                </ul>
+            </li>
+
+
+            <li><a href="#">Audible & Visual<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                </ul>
+            </li>
+
+
+            <li><a href="#">Alarm Annunciators<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+
+
+            <li><a href="#">Measuring Instruments<span
+                        class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+
+
+            <li><a href="#">Data Logging General<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Power Logging & Metering<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Software<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Interface Products<span
+                        class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Mimic Panels<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+
+            <li><a href="brands/brands.html">Brands<span class="sub-arrow"></span></a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                    <li><a href="#">Item 4</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+    <section id="products">
+        <div class="container">
+            <div class="row">
+                <a href="/LED-Indication/led-indication.html">  <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+                    <a style="text-decoration: none" href="/LED-Indication/led-indication.html">
+                   <div class="card"> <img class="card-img-top"
+                                src="https://mimiccomponents.co.za/wp-content/uploads/2020/09/A20P-1-180x128.jpg.webp"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">LED INDICATION ALL TYPES OF LED’S</p>
+                                <hr>
+                                <button class=" bttn">Viwe All</button>
+                            </div>
+                        </div>
+                    </a>
+                </div></a>
+                <div class="col-lg-3 offset-lg-0 col-sm-4 offset-sm-2 col-11 offset-1">
+                   <a href="#"><div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2020/02/R16-R602.png.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">CONTROL COMPONENTS</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+                  <a href="#"> <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2020/09/img_detail_1_default_204-225x225.jpg.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">AUDIBLE & VISUAL WARNING DEVICES</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg-3 col-sm-4 offset-lg-0 offset-sm-2 col-11 offset-1">
+                   <a href="#"> <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2020/02/N1500D-180x128.jpg.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">MEASURING INSTRUMENTS</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+                    <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2020/02/FieldChart-225x225.jpg.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">SOFTWARE</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 offset-lg-0 offset-sm-2 col-11 offset-1">
+                    <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2020/02/t2-logbox-rht_1_web-225x225.jpg.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">DATA LOGGING</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+                    <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2020/02/39506-13203727-225x225.jpg.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">ALARM SYSTEMS</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 offset-lg-0 offset-sm-2 col-11 offset-1">
+                    <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2021/07/AM-330-Wireless-Display-Receiver-225x225.png.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">INTERFACE PRODUCTS</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-3">
+                <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+                    <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2020/02/ADDA-8F-180x128.jpg.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">ALARM SYSTEMS</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 offset-lg-0 offset-sm-2 col-11 offset-1">
+                    <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2021/03/Catch9C4907-31-08-16-09-35-541-225x225.jpg.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">POWER LOGGING AND METERING</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-11 offset-sm-0 offset-1">
+                    <div class="card"> <img class="card-img-top"
+                            src="https://mimiccomponents.co.za/wp-content/uploads/2020/12/fire-mimic-225x225.png.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">MIMIC PANELS ENCLOSURES & CONTROL DESKS</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 offset-lg-0 offset-sm-2 col-11 offset-1">
+                   <a href="brands.html"> <div class="card"> <img class="card-img-top"
+                            src="https://media.istockphoto.com/photos/light-bulb-puzzle-pieces-forming-the-word-brand-on-blue-background-picture-id1272969812?b=1&k=20&m=1272969812&s=170667a&w=0&h=Jzv8_iSw8FlAI93SKOq3YCai4K3xEn5zw8HFj5RfvzA="
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">BRANDS</p>
+                            <hr>
+                            <button class=" bttn">Viwe All</button>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
